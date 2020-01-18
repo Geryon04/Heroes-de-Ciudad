@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58DBFB6A-5503-4793-A291-D3F251EEBA0A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract_Factory\Ambulancia.cs" />
+    <Compile Include="Abstract_Factory\Autobomba.cs" />
+    <Compile Include="Abstract_Factory\Buscapolo.cs" />
+    <Compile Include="Abstract_Factory\Camioneta.cs" />
+    <Compile Include="Abstract_Factory\CentralElectrica.cs" />
+    <Compile Include="Abstract_Factory\Comisaria.cs" />
+    <Compile Include="Abstract_Factory\CuartelDeBomberos.cs" />
+    <Compile Include="Abstract_Factory\Desfribilador.cs" />
+    <Compile Include="Abstract_Factory\FabricaBombero.cs" />
+    <Compile Include="Abstract_Factory\FabricaElectricista.cs" />
+    <Compile Include="Abstract_Factory\FabricaMedico.cs" />
+    <Compile Include="Abstract_Factory\FabricaPolicia.cs" />
+    <Compile Include="Abstract_Factory\Hospital.cs" />
+    <Compile Include="Abstract_Factory\ICuartel.cs" />
+    <Compile Include="Abstract_Factory\IFabricaDeHeroes.cs" />
+    <Compile Include="Abstract_Factory\IHerramienta.cs" />
+    <Compile Include="Abstract_Factory\IVehiculo.cs" />
+    <Compile Include="Abstract_Factory\Manguera.cs" />
+    <Compile Include="Abstract_Factory\Patrullero.cs" />
+    <Compile Include="Abstract_Factory\Pistola.cs" />
+    <Compile Include="Adapter\Adapter.cs" />
+    <Compile Include="Adapter\Passerby.cs" />
+    <Compile Include="Builder\AbstractBuilder.cs" />
+    <Compile Include="Builder\BuilderDesfavorable.cs" />
+    <Compile Include="Builder\BuilderFavorable.cs" />
+    <Compile Include="Builder\BuilderMixto.cs" />
+    <Compile Include="Builder\BuilderSimple.cs" />
+    <Compile Include="Builder\Director.cs" />
+    <Compile Include="Chain_Of_Responsability\DenunciaDeInfarto.cs" />
+    <Compile Include="Chain_Of_Responsability\DenunciaDeLamparaQuemada.cs" />
+    <Compile Include="Chain_Of_Responsability\DenunciaDeRobo.cs" />
+    <Compile Include="Chain_Of_Responsability\Operador911.cs" />
+    <Compile Include="Command\IOrden.cs" />
+    <Compile Include="Command\IPatrullable.cs" />
+    <Compile Include="Command\Main.cs" />
+    <Compile Include="Command\PedirRefuerzos.cs" />
+    <Compile Include="Command\PerseguirDelincuente.cs" />
+    <Compile Include="Command\VozDeAlto.cs" />
+    <Compile Include="Composite\Composite.cs" />
+    <Compile Include="Composite\IIluminable.cs" />
+    <Compile Include="Decorator\ArbolesGrandes.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="Decorator\DiaDeCalor.cs" />
+    <Compile Include="Decorator\DiaLluvioso.cs" />
+    <Compile Include="Decorator\DiaVentoso.cs" />
+    <Compile Include="Decorator\GenteAsustada.cs" />
+    <Compile Include="Decorator\ISector.cs" />
+    <Compile Include="Decorator\PastoSeco.cs" />
+    <Compile Include="Decorator\Sector.cs" />
+    <Compile Include="Factory Method\FactoryDiaVentoso.cs" />
+    <Compile Include="Factory Method\FactoryDiaDeCalor.cs" />
+    <Compile Include="Factory Method\FactoryDiaLluvioso.cs" />
+    <Compile Include="Factory Method\FactoryGenteAsustada.cs" />
+    <Compile Include="Factory Method\FactoryGrandesArboles.cs" />
+    <Compile Include="Factory Method\FactoryPastoSeco.cs" />
+    <Compile Include="Factory Method\FactorySectores.cs" />
+    <Compile Include="Factory Method\FactorySinDecorados.cs" />
+    <Compile Include="HeroesDeCiudad.cs" />
+    <Compile Include="Hero\Bombero.cs" />
+    <Compile Include="Hero\Electricista.cs" />
+    <Compile Include="Hero\Mecanico.cs" />
+    <Compile Include="Hero\Medico.cs" />
+    <Compile Include="Hero\Policia.cs" />
+    <Compile Include="Iterator\BomberoSecretario.cs" />
+    <Compile Include="Iterator\DenunciaDeIncendio.cs" />
+    <Compile Include="Iterator\DenunciaPorMostrador.cs" />
+    <Compile Include="Iterator\DenunciaPorTablero.cs" />
+    <Compile Include="Iterator\DenunciaPorWhatsapp.cs" />
+    <Compile Include="Iterator\IDenuncia.cs" />
+    <Compile Include="Iterator\IDenuncias.cs" />
+    <Compile Include="Iterator\IResponsable.cs" />
+    <Compile Include="Iterator\Iterator.cs" />
+    <Compile Include="Iterator\IterDenunciaPorMostrador.cs" />
+    <Compile Include="Iterator\IterDenunciaPorTablero.cs" />
+    <Compile Include="Iterator\IterDenunciaPorWhatsapp.cs" />
+    <Compile Include="Iterator\MensajeWhatsapp.cs" />
+    <Compile Include="Observer\Observable.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Places\Calle.cs" />
+    <Compile Include="Places\Casa.cs" />
+    <Compile Include="Places\Esquina.cs" />
+    <Compile Include="Places\Plaza.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\BomberoProxy.cs" />
+    <Compile Include="Proxy\ElectricistaProxy.cs" />
+    <Compile Include="Proxy\MedicoProxy.cs" />
+    <Compile Include="Proxy\PoliciaProxy.cs" />
+    <Compile Include="State\Apagado.cs" />
+    <Compile Include="State\ATodaVelocidad.cs" />
+    <Compile Include="State\EstadoDelMotor.cs" />
+    <Compile Include="State\MarchaLenta.cs" />
+    <Compile Include="State\MarchaMedia.cs" />
+    <Compile Include="State\PuntoMuerto.cs" />
+    <Compile Include="State\Roto.cs" />
+    <Compile Include="strategy\Escalera.cs" />
+    <Compile Include="strategy\Espiral.cs" />
+    <Compile Include="strategy\ILugar.cs" />
+    <Compile Include="strategy\IStrategy.cs" />
+    <Compile Include="strategy\Secuencial.cs" />
+    <Compile Include="Template Method\IInfartable.cs" />
+    <Compile Include="Template Method\RealizarRCP.cs" />
+    <Compile Include="Template Method\TemplateMethod.cs" />
+    <Compile Include="Template Method\Transeunte.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Singleton\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
